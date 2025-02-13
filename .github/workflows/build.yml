@@ -551,3 +551,6 @@ jobs:
           tags: ${{ env.tags }}
           labels: |
             org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
+
+      - uses: fawazahmed0/action-debug-vscode@v3
+        if: ${{ always() }}
